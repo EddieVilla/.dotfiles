@@ -19,3 +19,10 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+alias smc-off='smc -k "FS! " -w 0000'
+alias q='smc-off && pmset sleepnow'
+alias smc-6k='smc -k "FS! " -w 0003 && smc -k F0Tg -w 5dc0 && smc -k F1Tg -w 5dc0'
+alias smc-3k='smc -k "FS! " -w 0003 && smc -k F0Tg -w 2ee0 && smc -k F1Tg -w 2ee0'
+
+export PATH=$PATH:/Applications/smcFanControl.app/Contents/Resources
