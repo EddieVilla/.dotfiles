@@ -11,7 +11,7 @@ set list
 set listchars=precedes:<,extends:>,trail:.
 set nowrap
 set nu
-set relativenumber
+"set relativenumber
 set ruler
 set tabstop=4
 set sts=4
