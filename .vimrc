@@ -18,3 +18,4 @@ set sts=4
 set sw=4
 set undofile
 syntax on
+set bg=dark
